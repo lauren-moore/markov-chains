@@ -78,7 +78,7 @@ def make_text(chains, input_num, text_string_2):
     key = choice(list(chains.keys()))
     words.extend(list(key))
 
-    list(choice.keys())
+    # list(choice.keys())
 
     
 
@@ -103,10 +103,11 @@ def make_text(chains, input_num, text_string_2):
 
 # Ask user for how many words they want in a key
     # e.g. 3 = use 3 words for the key
-user_num = int(input("input an int btwn 1-10 >"))
+# user_num = int(input("input an int btwn 1-10 >"))
+user_num = 3
 
-input_path = sys.argv[1]
-# input_path = 'gettysburg.txt'
+# input_path = sys.argv[1]
+input_path = 'gettysburg.txt'
 
 # Open the file and turn it into one long string
 input_text = open_and_read_file(input_path)
@@ -115,5 +116,6 @@ chains = make_chains(input_text, user_num)
 # Produce random text
 random_text = make_text(chains, user_num, input_text)
 # Print result!
-print(random_text)
+# print(random_text)
+
 
