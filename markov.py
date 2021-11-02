@@ -78,6 +78,10 @@ def make_text(chains, input_num, text_string_2):
     key = choice(list(chains.keys()))
     words.extend(list(key))
 
+    list(choice.keys())
+
+    
+
     while True:
         
         next_word = choice(chains[key])
